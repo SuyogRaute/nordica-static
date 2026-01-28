@@ -15,6 +15,7 @@ export interface Product {
   reviewCount: number;
   inStock: boolean;
   badge?: string;
+  url?:string;
 }
 
 export const categories = [
@@ -49,7 +50,8 @@ export const products: Product[] = [
     rating: 4.9,
     reviewCount: 247,
     inStock: true,
-    badge: 'Best Seller'
+    badge: 'Best Seller',
+    url: "https://www.amazon.com/Detail-Guardz-Dirt-Bucket-Insert/dp/B07CKC4M9D?ref_=ast_sto_dp&th=1"
   },
   {
     id: 'ceramic-pro-coating',

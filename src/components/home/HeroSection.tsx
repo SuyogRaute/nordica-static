@@ -86,13 +86,13 @@ export function HeroSection() {
               <BannerCarousel />
 
               {/* Floating stats card */}
-              <div className="absolute -bottom-6 -left-6 bg-background rounded-xl shadow-elevated p-4 hidden sm:block">
+              <div className="absolute -bottom-6 -left-6 bg-background rounded-xl shadow-elevated p-1 hidden sm:block">
                 <div className="flex items-center gap-3">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <span className="text-2xl">⭐</span>
+                  <div className="h-6 w-6 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="text-1xl">⭐</span>
                   </div>
                   <div>
-                    <p className="font-bold text-foreground text-lg">4.9/5</p>
+                    <p className="font-bold text-foreground text-sm">4.9/5</p>
                     <p className="text-xs text-muted-foreground">2,500+ Reviews</p>
                   </div>
                 </div>

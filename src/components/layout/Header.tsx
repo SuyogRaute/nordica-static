@@ -11,7 +11,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import UserProfile from '@/components/home/UserProfile';
+import LOGO from "@/assets/logo.jpeg"
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -39,13 +39,7 @@ export const Header = () => {
   const { totalItems } = useCart();
 
   // Mock user data - Replace with your actual auth context/state
-  const currentUser = {
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john.doe@example.com',
-    phone: '+1 (555) 123-4567',
-    // avatar: 'https://example.com/avatar.jpg' // Optional
-  };
+  
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
@@ -54,13 +48,11 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">DG</span>
+              <div className="  flex items-center ">
+               <img src={LOGO} alt="" className=' object-contain h-20 w-20'/>
+              
               </div>
-              <div className="hidden sm:block">
-                <span className="font-bold text-xl tracking-tight text-foreground">Detail Guardz</span>
-                <span className="block text-xs text-muted-foreground -mt-1">Premium Car Care</span>
-              </div>
+             
             </div>
           </Link>
 
@@ -116,9 +108,7 @@ export const Header = () => {
             </Link>
 
             {/* User Profile - Desktop */}
-            <div className="hidden lg:block">
-              <UserProfile user={currentUser} />
-            </div>
+           
 
             {/* Mobile Menu */}
             <Sheet>
@@ -129,25 +119,7 @@ export const Header = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-80 bg-card border-border">
                 {/* Mobile User Profile Section */}
-                <div className="mb-6 pb-6 border-b border-border">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-white font-bold text-base shadow-lg">
-                      {currentUser.firstName[0]}{currentUser.lastName[0]}
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-foreground">
-                        {currentUser.firstName} {currentUser.lastName}
-                      </h3>
-                      <p className="text-xs text-muted-foreground">{currentUser.email}</p>
-                    </div>
-                  </div>
-                  <Link to="/settings">
-                    <Button variant="outline" className="w-full" size="sm">
-                      View Profile Settings
-                    </Button>
-                  </Link>
-                </div>
-
+          
                 {/* Navigation Links */}
                 <nav className="flex flex-col gap-4">
                   {navLinks.map((link) => (
@@ -181,18 +153,7 @@ export const Header = () => {
                     </div>
                   </div>
 
-                  {/* Quick Links Mobile */}
-                  <div className="pt-4 mt-4 border-t border-border space-y-2">
-                    <Link to="/myorders" className="block py-2 text-sm text-foreground hover:text-primary transition-colors">
-                      My Orders
-                    </Link>
-                    <Link to="/wishlist" className="block py-2 text-sm text-foreground hover:text-primary transition-colors">
-                      Wishlist
-                    </Link>
-                    <button className="block py-2 text-sm text-red-600 hover:text-red-700 transition-colors w-full text-left">
-                      Sign Out
-                    </button>
-                  </div>
+                 
                 </nav>
               </SheetContent>
             </Sheet>
