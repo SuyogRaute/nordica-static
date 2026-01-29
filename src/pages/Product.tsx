@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Search, Filter, ChevronDown } from 'lucide-react';
 import { Input } from '@/components/ui/input';
@@ -47,13 +47,33 @@ const Products = () => {
   );
   const [selectedPriceRanges, setSelectedPriceRanges] = useState<string[]>([]);
 
+  // Sync URL search params with state
+  useEffect(() => {
+    const categoryQuery = searchParams.get('category');
+    if (categoryQuery) {
+      setSelectedCategories([categoryQuery]);
+    } else {
+      setSelectedCategories([]);
+    }
+  }, [searchParams]);
+
+  const updateCategoryParam = (categories: string[]) => {
+    const newParams = new URLSearchParams(searchParams);
+    if (categories.length > 0) {
+      newParams.set('category', categories[0]); // Only supporting one category in URL for now to match Home page
+    } else {
+      newParams.delete('category');
+    }
+    setSearchParams(newParams);
+  };
+
   const filteredProducts = useMemo(() => {
     let result = [...products];
 
     // Search filter
     if (searchQuery) {
       const query = searchQuery.toLowerCase();
-      result = result.filter(p => 
+      result = result.filter(p =>
         p.name.toLowerCase().includes(query) ||
         p.description.toLowerCase().includes(query)
       );
@@ -101,15 +121,16 @@ const Products = () => {
   }, [searchQuery, selectedCategories, selectedPriceRanges, sortBy]);
 
   const toggleCategory = (categoryId: string) => {
-    setSelectedCategories(prev => 
-      prev.includes(categoryId)
-        ? prev.filter(c => c !== categoryId)
-        : [...prev, categoryId]
-    );
+    const newCategories = selectedCategories.includes(categoryId)
+      ? selectedCategories.filter(c => c !== categoryId)
+      : [...selectedCategories, categoryId];
+
+    setSelectedCategories(newCategories);
+    updateCategoryParam(newCategories);
   };
 
   const togglePriceRange = (range: string) => {
-    setSelectedPriceRanges(prev => 
+    setSelectedPriceRanges(prev =>
       prev.includes(range)
         ? prev.filter(r => r !== range)
         : [...prev, range]
@@ -120,6 +141,7 @@ const Products = () => {
     setSelectedCategories([]);
     setSelectedPriceRanges([]);
     setSearchQuery('');
+    setSearchParams(new URLSearchParams());
   };
 
   const FilterSidebar = () => (
@@ -130,12 +152,12 @@ const Products = () => {
         <div className="space-y-3">
           {categories.map((category) => (
             <div key={category.id} className="flex items-center gap-2">
-              <Checkbox 
+              <Checkbox
                 id={category.id}
                 checked={selectedCategories.includes(category.id)}
                 onCheckedChange={() => toggleCategory(category.id)}
               />
-              <label 
+              <label
                 htmlFor={category.id}
                 className="text-sm text-muted-foreground cursor-pointer hover:text-foreground"
               >
@@ -152,12 +174,12 @@ const Products = () => {
         <div className="space-y-3">
           {priceRanges.map((range) => (
             <div key={range.value} className="flex items-center gap-2">
-              <Checkbox 
+              <Checkbox
                 id={range.value}
                 checked={selectedPriceRanges.includes(range.value)}
                 onCheckedChange={() => togglePriceRange(range.value)}
               />
-              <label 
+              <label
                 htmlFor={range.value}
                 className="text-sm text-muted-foreground cursor-pointer hover:text-foreground"
               >
@@ -182,19 +204,19 @@ const Products = () => {
       <div className="pt-5 pb-16">
         <div className="container mx-auto px-4">
           {/* Breadcrumb navigation */}
-              <nav className="flex items-center gap-2 text-sm text-background/60 mb-6 group text-black">
-                <Link 
-                  to="/" 
-                  className="hover:text-background transition-colors duration-300 flex items-center gap-1 text-black"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                  Home
-                </Link>
-                <span className="text-background/40 text-black">/</span>
-                <span className="text-background font-medium text-black">shop</span>
-              </nav>
+          <nav className="flex items-center gap-2 text-sm text-background/60 mb-6 group text-black">
+            <Link
+              to="/"
+              className="hover:text-background transition-colors duration-300 flex items-center gap-1 text-black"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              Home
+            </Link>
+            <span className="text-background/40 text-black">/</span>
+            <span className="text-background font-medium text-black">shop</span>
+          </nav>
           {/* Header */}
           <div className="mb-8">
             <h1 className="font-display text-4xl md:text-5xl mb-2 text-foreground">

@@ -6,43 +6,8 @@ const categories = [
     name: "Detailing Accessories",
     description: "Wash mitts, brushes, applicators & tools",
     image: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&h=400&fit=crop",
-    href: "/products?category=accessories",
+    href: "/products?category=Detailing-Accessories",
     productCount: 45,
-  },
-  {
-    name: "Liquids & Chemicals",
-    description: "Soaps, waxes, sealants & coatings",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop",
-    href: "/products?category=liquids",
-    productCount: 62,
-  },
-  {
-    name: "Microfiber",
-    description: "Premium towels, cloths & pads",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
-    href: "/products?category=microfiber",
-    productCount: 28,
-  },
-  {
-    name: "Bundles & Kits",
-    description: "Complete detailing packages",
-    image: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&h=400&fit=crop",
-    href: "/products?category=bundles",
-    productCount: 15,
-  },
-  {
-    name: "Apparel & Merch",
-    description: "Show your Detail Guardz pride",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=400&fit=crop",
-    href: "/products?category=apparel",
-    productCount: 20,
-  },
-  {
-    name: "New Arrivals",
-    description: "Latest products just added",
-    image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&h=400&fit=crop",
-    href: "/products?category=new",
-    productCount: 12,
     featured: true,
   },
 ];
@@ -74,9 +39,8 @@ export function CategoriesSection() {
             <Link
               key={category.name}
               to={category.href}
-              className={`group relative overflow-hidden rounded-2xl hover-lift ${
-                category.featured ? 'sm:col-span-2 lg:col-span-1' : ''
-              }`}
+              className={`group relative overflow-hidden rounded-2xl hover-lift ${category.featured ? 'sm:col-span-2 lg:col-span-1' : ''
+                }`}
             >
               <div className="aspect-[4/3] relative">
                 <img
@@ -85,7 +49,7 @@ export function CategoriesSection() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />
-                
+
                 {category.featured && (
                   <div className="absolute top-4 left-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full">
                     New

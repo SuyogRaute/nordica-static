@@ -326,10 +326,12 @@ export default function FeaturedProducts() {
         </div>
 
         <div className="text-center mt-8 md:mt-12">
+          <Link to={'/products'}>
           <button className="px-6 py-2.5 md:px-8 md:py-3 bg-white text-gray-900 border-2 border-gray-300 rounded-lg hover:bg-gray-50 transition-colors flex items-center gap-2 mx-auto text-sm md:text-base">
             View All Products
             <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
           </button>
+          </Link>
         </div>
       </div>
     </section>

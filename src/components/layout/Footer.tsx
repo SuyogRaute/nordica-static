@@ -3,12 +3,9 @@ import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from "lucide-react"
 
 const footerLinks = {
   shop: [
-    { name: "All Products", href: "/shop" },
-    { name: "New Arrivals", href: "/shop/new" },
-    { name: "Detailing Accessories", href: "/shop/accessories" },
-    { name: "Liquids & Chemicals", href: "/shop/liquids" },
-    { name: "Microfiber", href: "/shop/microfiber" },
-    { name: "Bundles & Kits", href: "/shop/bundles" },
+    
+    { name: "Detailing Accessories", href: "/products" },
+    
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -113,7 +110,7 @@ export function Footer() {
                   className="flex items-center gap-3 text-background/70 hover:text-primary transition-colors"
                 >
                   <Mail className="h-5 w-5 text-primary shrink-0" />
-                  info@detailguardz.com
+                  info@nordicaplastics.com
                 </a>
               </li>
               <li>

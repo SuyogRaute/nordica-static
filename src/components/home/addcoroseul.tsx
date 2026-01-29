@@ -7,25 +7,25 @@ export function BannerCarousel() {
   // Product slides - admin can easily update these
   const productSlides = [
     {
-  image: "https://images.unsplash.com/photo-1605559424843-9e4c92c6d0c7?w=1200&h=800&fit=crop",
-  title: "Ceramic Coating",
-  subtitle: "Ultimate Paint Protection",
-  description: "Long-lasting ceramic coating for unmatched gloss and durability",
-  badge: "Best Seller",
+  image: "https://m.media-amazon.com/images/I/71FKBeRc4cL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+  title: "Bucket Filter",
+  subtitle: "",
+  description: "Dirt Lock Car Wash Insert – Bucket Filter for 3–8 Gallon Round Pails – Traps Debris, Prevents Swirl Marks – Self-Locking Rubber Grips, Venturi Flow, Cleaning Tool",
+  badge: "",
 },
 {
-  image: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=1200&h=800&fit=crop",
-  title: "Premium Car Wash",
-  subtitle: "Safe • pH Neutral",
-  description: "Deep-clean formula that protects paint and clear coat",
-  badge: "New Arrival",
+  image: "https://m.media-amazon.com/images/I/710cuaz8RzS._AC_SX466_.jpg",
+  title: "The Detail Guardz",
+  subtitle: "",
+  description: "Dirt Lock Pad Washer System Attachment with Spray Cleaner",
+  badge: "",
 },
 {
-  image: "https://images.unsplash.com/photo-1610652492500-ded49ceeb378?w=1200&h=800&fit=crop",
-  title: "Interior Detailing",
-  subtitle: "Luxury Cabin Care",
-  description: "Professional-grade interior cleaner for leather, fabric & trim",
-  badge: "Featured",
+  image: "https://m.media-amazon.com/images/I/71D+tIPz01L._AC_SL1500_.jpg",
+  title: "Dirt Lock Scrub Wall",
+  subtitle: "",
+  description: "Dirt Lock Scrub Wall 180/360 – Washboard Attachment Dirt Lock - Bucket Filter – Vertical Cleaning Tool for Brushes, Mitts (White)",
+  badge: "",
 }
 
   ];
@@ -78,9 +78,7 @@ export function BannerCarousel() {
             <div className="relative h-full flex items-center px-8 md:px-12 lg:px-16">
               <div className="max-w-2xl space-y-3 md:space-y-5">
                 {/* Badge */}
-                <span className="inline-block px-4 py-1.5 bg-white/95 text-gray-900 text-sm md:text-base font-semibold rounded-full shadow-lg">
-                  {slide.badge}
-                </span>
+                
                 
                 {/* Title */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">

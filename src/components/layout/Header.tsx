@@ -44,7 +44,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center  h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center gap-2">
@@ -57,12 +57,12 @@ export const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex ml-auto gap-14">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+                className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors"
               >
                 {link.name}
               </Link>
@@ -72,7 +72,7 @@ export const Header = () => {
           {/* Right Side Actions */}
           <div className="flex items-center gap-4">
             {/* Currency Switcher */}
-            <DropdownMenu>
+            {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="hidden sm:flex gap-1 text-foreground/80">
                   {currency}
@@ -93,10 +93,10 @@ export const Header = () => {
                   🇨🇦 CAD - Canadian Dollar
                 </DropdownMenuItem>
               </DropdownMenuContent>
-            </DropdownMenu>
+            </DropdownMenu> */}
 
             {/* Cart */}
-            <Link to="/cart">
+            {/* <Link to="/cart">
               <Button variant="ghost" size="icon" className="relative">
                 <ShoppingCart className="h-5 w-5" />
                 {totalItems > 0 && (
@@ -104,8 +104,8 @@ export const Header = () => {
                     {totalItems}
                   </span>
                 )}
-              </Button>
-            </Link>
+              </Button> */}
+            {/* </Link> */}
 
             {/* User Profile - Desktop */}
            
@@ -133,7 +133,7 @@ export const Header = () => {
                   ))}
                   
                   {/* Currency Switcher Mobile */}
-                  <div className="pt-4">
+                  {/* <div className="pt-4">
                     <p className="text-sm text-muted-foreground mb-2">Currency</p>
                     <div className="flex gap-2">
                       <Button 
@@ -151,7 +151,7 @@ export const Header = () => {
                         🇨🇦 CAD
                       </Button>
                     </div>
-                  </div>
+                  </div> */}
 
                  
                 </nav>

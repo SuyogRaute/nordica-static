@@ -16,7 +16,7 @@ export function HeroSection() {
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=1920&h=1080&fit=crop"
+            src="https://media.istockphoto.com/id/536877291/photo/repair-garage.webp?a=1&b=1&s=612x612&w=0&k=20&c=gUUzFLy5lRxwntMf5mHG6jN0t4rJfDmW3uunQKcva4c="
             alt=""
             className="w-full h-full object-cover"
           />
@@ -50,13 +50,13 @@ export function HeroSection() {
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start opacity-0 animate-fade-up animation-delay-300">
                 <Button variant="hero" size="xl" asChild>
-                  <Link to="/shop">
+                  <Link to="/products">
                     Shop Now
                     <ArrowRight className="w-5 h-5 ml-1" />
                   </Link>
                 </Button>
                 <Button variant="hero-outline" size="xl" className="text-background border-background/20 hover:bg-background/10" asChild>
-                  <Link to="/shop/new">
+                  <Link to="/products?category=Detailing-Accessories">
                     New Arrivals
                   </Link>
                 </Button>
