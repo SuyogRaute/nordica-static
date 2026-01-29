@@ -256,7 +256,7 @@ export default function FeaturedProducts() {
                         className="group block"
                       >
                         <button className="w-full px-4 py-2 md:px-6 md:py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm md:text-base">
-                          View Details
+                          Buy Now
                         </button>
                       </Link>
                     </div>

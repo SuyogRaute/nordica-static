@@ -109,18 +109,18 @@ export function BannerCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-3 md:p-3.5 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
+        className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 text-primary backdrop-blur-sm rounded-full p-3 md:p-1 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-gray-900" />
+        <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-white" />
       </button>
       
       <button
         onClick={goToNext}
-        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white backdrop-blur-sm rounded-full p-3 md:p-3.5 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
+        className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 text-primary backdrop-blur-sm rounded-full p-1 md:p-1 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-gray-900" />
+        <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-white" />
       </button>
 
       {/* Dot Indicators */}

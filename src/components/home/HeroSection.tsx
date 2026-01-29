@@ -68,14 +68,14 @@ export function HeroSection() {
                   <div className="flex items-center gap-2">
                     
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <div className="h-2 w-2 rounded-full bg-primary" />
                     100% Satisfaction
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="h-2 w-2 rounded-full bg-primary" />
                     Canadian Owned
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@ export function HeroSection() {
               <BannerCarousel />
 
               {/* Floating stats card */}
-              <div className="absolute -bottom-6 -left-6 bg-background rounded-xl shadow-elevated p-1 hidden sm:block">
+              {/* <div className="absolute -bottom-6 -left-6 bg-background rounded-xl shadow-elevated p-1 hidden sm:block">
                 <div className="flex items-center gap-3">
                   <div className="h-6 w-6 rounded-lg bg-primary/10 flex items-center justify-center">
                     <span className="text-1xl">⭐</span>
@@ -95,7 +95,7 @@ export function HeroSection() {
                     <p className="text-xs text-muted-foreground">2,500+ Reviews</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
