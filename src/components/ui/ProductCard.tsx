@@ -116,26 +116,31 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   }`}
               />
             ))}
+            
           </div>
           <span className="text-xs text-muted-foreground">
             ({product.reviewCount})
           </span>
+          <span className='text-red-500 text-xs'>Rating is given on basis of Amazon</span>
         </div>
 
         {/* Spacer to push price to bottom */}
         <div className="flex-grow"></div>
 
         {/* Price */}
-        <div className="flex items-center gap-2 ">
-          <span className="text-base font-bold text-foreground">
-            {formatPrice(product.price)}
-          </span>
-          {product.originalPrice && (
-            <span className="text-sm text-muted-foreground line-through">
-              {formatPrice(product.originalPrice)}
-            </span>
-          )}
-        </div>
+{product.price != null && (
+  <div className="flex items-center gap-2">
+    <span className="text-base font-bold text-foreground">
+      {formatPrice(product.price)}
+    </span>
+
+    {product.originalPrice != null && (
+      <span className="text-sm text-muted-foreground line-through">
+        {formatPrice(product.originalPrice)}
+      </span>
+    )}
+  </div>
+)}
       </div>
     </div>
 

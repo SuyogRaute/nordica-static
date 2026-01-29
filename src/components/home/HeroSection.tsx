@@ -30,7 +30,7 @@ export function HeroSection() {
           <div className="absolute bottom-20 right-40 w-64 h-64 rounded-full bg-primary blur-2xl" />
         </div>
 
-        <div className="container-wide relative z-10 py-20 lg:py-32">
+        <div className="container-wide relative z-10 py-20 lg:py-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Content */}
             <div className="text-center lg:text-left">
@@ -66,8 +66,7 @@ export function HeroSection() {
               <div className="mt-10 pt-8 border-t border-background/10 opacity-0 animate-fade-up animation-delay-400">
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-background/60 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="h-2 w-2 rounded-full bg-primary" />
-                    Free Shipping Over $75
+                    
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="h-2 w-2 rounded-full bg-primary" />
@@ -82,7 +81,7 @@ export function HeroSection() {
             </div>
 
             {/* Banner Carousel Area */}
-            <div className="relative opacity-0 animate-fade-up animation-delay-200">
+            <div className="relative opacity-0 animate-fade-up animation-delay-200 ">
               <BannerCarousel />
 
               {/* Floating stats card */}
