@@ -41,16 +41,16 @@ export default function FeaturedProducts() {
       badge: "Premium",
       url: "https://www.amazon.com/DETAIL-GUARDZ-Attachment-Bucket-Filter/dp/B08FTK9PJJ?ref_=ast_sto_dp&th=1"
     },
-    {
-      id: 4,
-      name: "Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter) ",
-      price: 199.99,
-      rating: 4.9,
-      reviews: 156,
-      image: "https://m.media-amazon.com/images/S/aplus-media/sc/8b3aa2c3-50fc-492d-b032-301bd651808d.__CR0,244,1000,619_PT0_SX970_V1___.jpg",
-      badge: "Premium",
-      url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WWPLGNB?ref_=ast_sto_dp"
-    },
+    // {
+    //   id: 4,
+    //   name: "Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter) ",
+    //   price: 199.99,
+    //   rating: 4.9,
+    //   reviews: 156,
+    //   image: "https://m.media-amazon.com/images/S/aplus-media/sc/8b3aa2c3-50fc-492d-b032-301bd651808d.__CR0,244,1000,619_PT0_SX970_V1___.jpg",
+    //   badge: "Premium",
+    //   url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WWPLGNB?ref_=ast_sto_dp"
+    // },
     {
       id: 5,
       name: "Dirt Lock Pad Washer System Attachment with Spray Cleaner",
@@ -81,26 +81,26 @@ export default function FeaturedProducts() {
       badge: "Premium",
       url: "https://www.amazon.com/DETAIL-GUARDZ-Hose-Guide-Motorcycles/dp/B0FHKTM2YW?ref_=ast_sto_dp&th=1"
     },
-    {
-      id: 8,
-      name: "The Microfiber and Foam Pad Cleaner Spray (6X 650ML)",
-      price: 79.99,
-      rating: 4.9,
-      reviews: 345,
-      image: "https://m.media-amazon.com/images/I/8153MDtrc5L._AC_SX466_.jpg",
-      badge: "Premium",
-      url: "https://www.amazon.com/DETAIL-GUARDZ-Microfiber-Cleaner-Spray/dp/B08WT79STZ?ref_=ast_sto_dp"
-    },
-    {
-      id: 9,
-      name: " Car Hose Guides (2 Pack Black)",
-      price: 299.99,
-      rating: 5.0,
-      reviews: 178,
-      image: "https://m.media-amazon.com/images/I/61d5UKVXwoL._AC_SX466_.jpg",
-      badge: "Premium",
-      url: "https://www.amazon.com/Detail-Guardz-Hose-Guide-Black/dp/B07ND4L2ML?ref_=ast_sto_dp&th=1"
-    }
+    // {
+    //   id: 8,
+    //   name: "The Microfiber and Foam Pad Cleaner Spray (6X 650ML)",
+    //   price: 79.99,
+    //   rating: 4.9,
+    //   reviews: 345,
+    //   image: "https://m.media-amazon.com/images/I/8153MDtrc5L._AC_SX466_.jpg",
+    //   badge: "Premium",
+    //   url: "https://www.amazon.com/DETAIL-GUARDZ-Microfiber-Cleaner-Spray/dp/B08WT79STZ?ref_=ast_sto_dp"
+    // },
+    // {
+    //   id: 9,
+    //   name: " Car Hose Guides (2 Pack Black)",
+    //   price: 299.99,
+    //   rating: 5.0,
+    //   reviews: 178,
+    //   image: "https://m.media-amazon.com/images/I/61d5UKVXwoL._AC_SX466_.jpg",
+    //   badge: "Premium",
+    //   url: "https://www.amazon.com/Detail-Guardz-Hose-Guide-Black/dp/B07ND4L2ML?ref_=ast_sto_dp&th=1"
+    // }
   ];
 
   const getItemsPerPage = () => {

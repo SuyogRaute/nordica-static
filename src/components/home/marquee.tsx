@@ -2,11 +2,14 @@ import { Sparkles, Truck, Tag, Gift, Zap } from "lucide-react";
 
 export function MarqueeBar() {
   const announcements = [
-    { icon: Tag, text: "Summer Sale – Up to 50% Off" },
-    { icon: Truck, text: "Free Shipping on Orders Over $75" },
-    { icon: Gift, text: "Buy 2 Get 1 Free on Selected Items" },
-    { icon: Sparkles, text: "New Arrivals – Premium Car Care" },
-    { icon: Zap, text: "Limited Time Offer" },
+    { icon: Tag, text: "OFFER" },
+    { icon: Tag, text: "OFFER" },
+    { icon: Tag, text: "OFFER" },
+    { icon: Tag, text: "OFFER" },
+    { icon: Tag, text: "OFFER" },
+    { icon: Tag, text: "OFFER" },
+  
+    
   ];
 
   return (
@@ -14,7 +17,7 @@ export function MarqueeBar() {
       {/* subtle highlight line */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-400/40 to-transparent" />
 
-      <div className="flex w-max animate-marquee">
+      <div className="flex w-max ">
         {[...announcements, ...announcements].map((item, index) => {
           const Icon = item.icon;
           return (

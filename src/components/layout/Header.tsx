@@ -44,12 +44,12 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container mx-auto px-4">
-        <div className="flex items-center  h-20">
+        <div className="flex items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <div className="flex items-center gap-2">
-              <div className="  flex items-center ">
-               <img src={LOGO} alt="" className=' object-contain h-20 w-20'/>
+              <div className="flex items-center">
+               <img src={LOGO} alt="" className='object-contain h-20 w-20'/>
               
               </div>
              
@@ -70,7 +70,7 @@ export const Header = () => {
           </nav>
 
           {/* Right Side Actions */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center ml-auto lg:ml-0 gap-4">
             {/* Currency Switcher */}
             {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -112,6 +112,7 @@ export const Header = () => {
 
             {/* Mobile Menu */}
             <Sheet>
+              
               <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
@@ -121,7 +122,7 @@ export const Header = () => {
                 {/* Mobile User Profile Section */}
           
                 {/* Navigation Links */}
-                <nav className="flex flex-col gap-4">
+                <nav className="flex flex-col justify-center gap-4">
                   {navLinks.map((link) => (
                     <Link
                       key={link.name}

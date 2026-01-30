@@ -78,7 +78,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             Buy Now
           </Button>
           <p className="text-[10px] text-red-500 selection:text-center text-muted-foreground mt-2 opacity-90 leading-tight">
-            You'll be redirected to Amazon until our checkout is ready
+            You'll be redirected to Amazon until 
+            our checkout Cart is ready to use
           </p>
         </div>
 
@@ -121,7 +122,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           <span className="text-xs text-muted-foreground">
             ({product.reviewCount})
           </span>
-          <span className='text-red-500 text-xs'>Rating is given on basis of Amazon</span>
+          <span className='text-red-500 text-xs'>Rating as per amazon.com</span>
         </div>
 
         {/* Spacer to push price to bottom */}

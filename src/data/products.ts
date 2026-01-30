@@ -98,54 +98,54 @@ export const products: Product[] = [
     inStock: true,
     url: "https://www.amazon.com/DETAIL-GUARDZ-Attachment-Bucket-Filter/dp/B08FTK9PJJ?ref_=ast_sto_dp&th=1"
   },
-  {
-    id: 'Detailing Accessories',
-    name: 'Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter) ',
-    slug: 'Detailing-Accessories',
-    description: '',
-    longDescription: 'Shield your bumpers from everyday hazards with our comprehensive Front & Rear Bumper Guard Kit. Designed for the areas most susceptible to damage, this thick, durable film absorbs impacts from shopping carts, minor collisions, and road debris. The kit includes coverage for both front and rear bumper corners and edges.',
-    price: 33.99,
-    originalPrice: null,
-    category: 'Detailing-Accessories',
-    image: 'https://m.media-amazon.com/images/I/71FXvGVXeHS._AC_SX466_.jpg',
-    images: ['/src/assets/product-bumper.jpg'],
-    features: [
-      'Extra-thick protection',
-      'Impact resistant',
-      'Pre-cut patterns',
-      'Clear or matte finish',
-      '7-year warranty'
-    ],
-    compatibility: ['BMW', 'Mercedes-Benz', 'Audi', 'Tesla', 'Lexus', 'Acura'],
-    rating: 4.8,
-    reviewCount: 156,
-    inStock: true,
-    badge: '',
-    url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WWPLGNB?ref_=ast_sto_dp"
-  },
-  {
-    id: 'Detailing Accessories',
-    name: 'Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter)',
-    slug: 'Detailing-Accessories',
-    description: '',
-    longDescription: 'Maximum protection for maximum exposure. Our Hood Protection Film provides full coverage for your vehicle\'s hood—the area most exposed to rock chips and road debris on highways. With 50% thicker material than standard PPF, this film is engineered for drivers who demand the best protection.',
-    price: 33.99,
-    category: 'Detailing-Accessories',
-    image: 'https://m.media-amazon.com/images/I/71+TXrAMnfL._AC_SX466_.jpg',
-    images: ['/src/assets/product-ppf.jpg'],
-    features: [
-      '50% thicker material',
-      'Highway-grade protection',
-      'Self-healing',
-      'Precision cut',
-      '10-year warranty'
-    ],
-    compatibility: ['Most sedan and SUV models'],
-    rating: 4.9,
-    reviewCount: 89,
-    inStock: true,
-    url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WRL277D?ref_=ast_sto_dp"
-  },
+  // {
+  //   id: 'Detailing Accessories',
+  //   name: 'Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter) ',
+  //   slug: 'Detailing-Accessories',
+  //   description: '',
+  //   longDescription: 'Shield your bumpers from everyday hazards with our comprehensive Front & Rear Bumper Guard Kit. Designed for the areas most susceptible to damage, this thick, durable film absorbs impacts from shopping carts, minor collisions, and road debris. The kit includes coverage for both front and rear bumper corners and edges.',
+  //   price: 33.99,
+  //   originalPrice: null,
+  //   category: 'Detailing-Accessories',
+  //   image: 'https://m.media-amazon.com/images/I/71FXvGVXeHS._AC_SX466_.jpg',
+  //   images: ['/src/assets/product-bumper.jpg'],
+  //   features: [
+  //     'Extra-thick protection',
+  //     'Impact resistant',
+  //     'Pre-cut patterns',
+  //     'Clear or matte finish',
+  //     '7-year warranty'
+  //   ],
+  //   compatibility: ['BMW', 'Mercedes-Benz', 'Audi', 'Tesla', 'Lexus', 'Acura'],
+  //   rating: 4.8,
+  //   reviewCount: 156,
+  //   inStock: true,
+  //   badge: '',
+  //   url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WWPLGNB?ref_=ast_sto_dp"
+  // },
+  // {
+  //   id: 'Detailing Accessories',
+  //   name: 'Dirt Lock Scrub and Pump Bundle Complete Kit (Includes Dirt Lock Car Wash Bucket Filter)',
+  //   slug: 'Detailing-Accessories',
+  //   description: '',
+  //   longDescription: 'Maximum protection for maximum exposure. Our Hood Protection Film provides full coverage for your vehicle\'s hood—the area most exposed to rock chips and road debris on highways. With 50% thicker material than standard PPF, this film is engineered for drivers who demand the best protection.',
+  //   price: 33.99,
+  //   category: 'Detailing-Accessories',
+  //   image: 'https://m.media-amazon.com/images/I/71+TXrAMnfL._AC_SX466_.jpg',
+  //   images: ['/src/assets/product-ppf.jpg'],
+  //   features: [
+  //     '50% thicker material',
+  //     'Highway-grade protection',
+  //     'Self-healing',
+  //     'Precision cut',
+  //     '10-year warranty'
+  //   ],
+  //   compatibility: ['Most sedan and SUV models'],
+  //   rating: 4.9,
+  //   reviewCount: 89,
+  //   inStock: true,
+  //   url: "https://www.amazon.com/DETAIL-GUARDZ-Bundle-Complete-Bucket/dp/B08WRL277D?ref_=ast_sto_dp"
+  // },
   {
     id: 'Detailing Accessories',
     name: 'Dirt Lock Pad Washer System Attachment with Spray Cleaner (Black)',
@@ -169,29 +169,29 @@ export const products: Product[] = [
     inStock: true,
     url: "https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1"
   },
-  {
-    id: 'Detailing Accessories',
-    name: 'The Dirt Lock Complete Pad Washer Bundle (Red - with Pad Spray Cleaner) Includes Dirt Lock Bucket Filter',
-    slug: 'Detailing-Accessories',
-    description: '',
-    longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
-    price: 79.99,
-    category: 'Detailing-Accessories',
-    image: 'https://m.media-amazon.com/images/I/610BaHck-iL._AC_SX466_.jpg',
-    images: ['/src/assets/product-ppf.jpg'],
-    features: [
-      'Optically clear',
-      'Anti-yellowing',
-      'UV blocking',
-      'Easy removal',
-      '5-year warranty'
-    ],
-    compatibility: ['Universal - headlights and taillights'],
-    rating: 4.6,
-    reviewCount: 234,
-    inStock: true,
-    url: "https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1"
-  },
+  // {
+  //   id: 'Detailing Accessories',
+  //   name: 'The Dirt Lock Complete Pad Washer Bundle (Red - with Pad Spray Cleaner) Includes Dirt Lock Bucket Filter',
+  //   slug: 'Detailing-Accessories',
+  //   description: '',
+  //   longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
+  //   price: 79.99,
+  //   category: 'Detailing-Accessories',
+  //   image: 'https://m.media-amazon.com/images/I/610BaHck-iL._AC_SX466_.jpg',
+  //   images: ['/src/assets/product-ppf.jpg'],
+  //   features: [
+  //     'Optically clear',
+  //     'Anti-yellowing',
+  //     'UV blocking',
+  //     'Easy removal',
+  //     '5-year warranty'
+  //   ],
+  //   compatibility: ['Universal - headlights and taillights'],
+  //   rating: 4.6,
+  //   reviewCount: 234,
+  //   inStock: true,
+  //   url: "https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1"
+  // },
   {
     id: 'Detailing Accessories',
     name: '4pcs Plastic Hose Roller for Cars, Trucks & Motorcycles - Car Wheel Rolling System Tool Preventing Stucking and Snagging Under Tires (Black)',
@@ -215,52 +215,52 @@ export const products: Product[] = [
     inStock: true,
     url: "https://www.amazon.com/DETAIL-GUARDZ-Hose-Guide-Motorcycles/dp/B0FHKTM2YW?ref_=ast_sto_dp&th=1"
   },
-  {
-    id: 'Detailing Accessories',
-    name: 'DETAIL GUARDZ Car Hose Guides (2 Pack Black)',
-    slug: 'Detailing-Accessories',
-    description: '',
-    longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
-    price: 12.99,
-    category: 'Detailing-Accessories',
-    image: 'https://m.media-amazon.com/images/I/61d5UKVXwoL._AC_SX466_.jpg',
-    images: ['/src/assets/product-ppf.jpg'],
-    features: [
-      'Optically clear',
-      'Anti-yellowing',
-      'UV blocking',
-      'Easy removal',
-      '5-year warranty'
-    ],
-    compatibility: ['Universal - headlights and taillights'],
-    rating: 4.6,
-    reviewCount: 234,
-    inStock: true,
-    url: "https://www.amazon.com/Detail-Guardz-Hose-Guide-Black/dp/B07ND4L2ML?ref_=ast_sto_dp&th=1"
-  },
-  {
-    id: 'Detailing Accessories',
-    name: 'DETAIL GUARDZ The Microfiber and Foam Pad Cleaner Spray (6X 650ML)',
-    slug: 'Detailing-Accessories',
-    description: '',
-    longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
-    price: null,
-    category: 'Detailing-Accessories',
-    image: 'https://m.media-amazon.com/images/I/8153MDtrc5L._AC_SY300_SX300_QL70_FMwebp_.jpg',
-    images: ['/src/assets/product-ppf.jpg'],
-    features: [
-      'Optically clear',
-      'Anti-yellowing',
-      'UV blocking',
-      'Easy removal',
-      '5-year warranty'
-    ],
-    compatibility: ['Universal - headlights and taillights'],
-    rating: 4.6,
-    reviewCount: 234,
-    inStock: true,
-    url: "https://www.amazon.com/DETAIL-GUARDZ-Microfiber-Cleaner-Spray/dp/B08WT79STZ?ref_=ast_sto_dp"
-  }
+  // {
+  //   id: 'Detailing Accessories',
+  //   name: 'DETAIL GUARDZ Car Hose Guides (2 Pack Black)',
+  //   slug: 'Detailing-Accessories',
+  //   description: '',
+  //   longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
+  //   price: 12.99,
+  //   category: 'Detailing-Accessories',
+  //   image: 'https://m.media-amazon.com/images/I/61d5UKVXwoL._AC_SX466_.jpg',
+  //   images: ['/src/assets/product-ppf.jpg'],
+  //   features: [
+  //     'Optically clear',
+  //     'Anti-yellowing',
+  //     'UV blocking',
+  //     'Easy removal',
+  //     '5-year warranty'
+  //   ],
+  //   compatibility: ['Universal - headlights and taillights'],
+  //   rating: 4.6,
+  //   reviewCount: 234,
+  //   inStock: true,
+  //   url: "https://www.amazon.com/Detail-Guardz-Hose-Guide-Black/dp/B07ND4L2ML?ref_=ast_sto_dp&th=1"
+  // },
+  // {
+  //   id: 'Detailing Accessories',
+  //   name: 'DETAIL GUARDZ The Microfiber and Foam Pad Cleaner Spray (6X 650ML)',
+  //   slug: 'Detailing-Accessories',
+  //   description: '',
+  //   longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
+  //   price: null,
+  //   category: 'Detailing-Accessories',
+  //   image: 'https://m.media-amazon.com/images/I/8153MDtrc5L._AC_SY300_SX300_QL70_FMwebp_.jpg',
+  //   images: ['/src/assets/product-ppf.jpg'],
+  //   features: [
+  //     'Optically clear',
+  //     'Anti-yellowing',
+  //     'UV blocking',
+  //     'Easy removal',
+  //     '5-year warranty'
+  //   ],
+  //   compatibility: ['Universal - headlights and taillights'],
+  //   rating: 4.6,
+  //   reviewCount: 234,
+  //   inStock: true,
+  //   url: "https://www.amazon.com/DETAIL-GUARDZ-Microfiber-Cleaner-Spray/dp/B08WT79STZ?ref_=ast_sto_dp"
+  // }
 ];
 
 export const getProductBySlug = (slug: string) => products.find(p => p.slug === slug);
