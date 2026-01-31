@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { BannerCarousel } from "@/components/home/addcoroseul";
 import { MarqueeBar } from "@/components/home/marquee";
 import { useEffect } from "react";
+import BG from "@/assets/image.png"
 
 export function HeroSection() {
   
@@ -16,7 +17,7 @@ export function HeroSection() {
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <img
-            src="https://media.istockphoto.com/id/536877291/photo/repair-garage.webp?a=1&b=1&s=612x612&w=0&k=20&c=gUUzFLy5lRxwntMf5mHG6jN0t4rJfDmW3uunQKcva4c="
+            src={BG}
             alt=""
             className="w-full h-full object-cover"
           />

@@ -16,13 +16,13 @@ const CAD_RATE = 1.36; // Approximate USD to CAD conversion
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currency, setCurrency] = useState<Currency>('USD');
 
-  useEffect(() => {
-    // Auto-detect country based on timezone (simple approach)
-    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    if (timezone.includes('Toronto') || timezone.includes('Vancouver') || timezone.includes('Canada')) {
-      setCurrency('CAD');
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Auto-detect country based on timezone (simple approach)
+  //   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  //   if (timezone.includes('Toronto') || timezone.includes('Vancouver') || timezone.includes('Canada')) {
+  //     setCurrency('CAD');
+  //   }
+  // }, []);
 
   const convertPrice = (priceUSD: number): number => {
     if (currency === 'CAD') {

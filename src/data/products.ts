@@ -169,29 +169,29 @@ export const products: Product[] = [
     inStock: true,
     url: "https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1"
   },
-  // {
-  //   id: 'Detailing Accessories',
-  //   name: 'The Dirt Lock Complete Pad Washer Bundle (Red - with Pad Spray Cleaner) Includes Dirt Lock Bucket Filter',
-  //   slug: 'Detailing-Accessories',
-  //   description: '',
-  //   longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
-  //   price: 79.99,
-  //   category: 'Detailing-Accessories',
-  //   image: 'https://m.media-amazon.com/images/I/610BaHck-iL._AC_SX466_.jpg',
-  //   images: ['/src/assets/product-ppf.jpg'],
-  //   features: [
-  //     'Optically clear',
-  //     'Anti-yellowing',
-  //     'UV blocking',
-  //     'Easy removal',
-  //     '5-year warranty'
-  //   ],
-  //   compatibility: ['Universal - headlights and taillights'],
-  //   rating: 4.6,
-  //   reviewCount: 234,
-  //   inStock: true,
-  //   url: "https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1https://www.amazon.com/Detail-Guardz-Washer-Attachment-Cleaner/dp/B07VGMKW7S?ref_=ast_sto_dp&th=1"
-  // },
+  {
+    id: 'Detailing Accessories',
+    name: 'DETAIL GUARDZ The Dirt Lock Pad Washer Bundle Complete Kit (Black) Includes Dirt Lock Bucket Filter',
+    slug: 'Detailing-Accessories',
+    description: '',
+    longDescription: 'Keep your lights crystal clear with our Headlight Protection Film. This specialized film protects expensive headlight and taillight assemblies from yellowing, hazing, and rock chips. The optically clear material maintains full light output while providing a barrier against UV damage and road debris.',
+    price: 45.99,
+    category: 'Detailing-Accessories',
+    image: 'https://m.media-amazon.com/images/I/61jDCK8t-1S._AC_SX466_.jpg',
+    images: ['/src/assets/product-ppf.jpg'],
+    features: [
+      'Optically clear',
+      'Anti-yellowing',
+      'UV blocking',
+      'Easy removal',
+      '5-year warranty'
+    ],
+    compatibility: ['Universal - headlights and taillights'],
+    rating: 4.6,
+    reviewCount: 234,
+    inStock: true,
+    url: "https://www.amazon.com/DETAIL-GUARDZ-Washer-Bundle-Complete/dp/B088WZ9STB?ref_=ast_sto_dp"
+  },
   {
     id: 'Detailing Accessories',
     name: '4pcs Plastic Hose Roller for Cars, Trucks & Motorcycles - Car Wheel Rolling System Tool Preventing Stucking and Snagging Under Tires (Black)',
