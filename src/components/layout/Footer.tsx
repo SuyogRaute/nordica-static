@@ -14,8 +14,8 @@ const footerLinks = {
     { name: "Canada Store", href: "/canada" },
   ],
   support: [
-    { name: "Shipping & Returns", href: "/shipping" },
-    { name: "FAQ", href: "/faq" },
+    { name: "Shipping & Returns", href: "/shippingd" },
+    { name: "FAQ", href: "/faqw" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
   ],
